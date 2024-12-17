@@ -1,0 +1,66 @@
+{% load static %}
+
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+  <div class="sidebar-sticky">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'expenses' %}" style="font-size: 1.2rem; margin-top:20px;">
+          Expenses
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'income' %}" style="font-size: 1.2rem;">
+          Income
+        </a>
+      </li>
+    </ul>
+
+    <h6
+      class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
+    >
+      <span style="font-size: 1rem;">Summary</span>
+      <a
+        class="d-flex align-items-center text-muted" 
+        href="#"
+        aria-label="Add a new report"
+        
+      >
+        <span data-feather="plus-circle"></span>
+      </a>
+    </h6>
+    <ul class="nav flex-column mb-2">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'stats'%}" style="font-size: 1.2rem;">
+          Dashboard
+        </a>
+      </li>
+    </ul>
+
+    <h6
+      class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
+    >
+      <span style="font-size: 1rem;">Settings</span>
+      <a
+        class="d-flex align-items-center text-muted"
+        href="#" 
+        aria-label="Add a new report"
+        style="font-size: 9.4rem;"
+      >
+        <span data-feather="plus-circle"></span>
+      </a>
+    </h6>
+    <ul class="nav flex-column mb-2">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'preferences' %}" style="font-size: 1.2rem;">
+          Currencies
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="font-size: 1.2rem;">
+          <span data-feather="file-text"></span>
+          Export CSV
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

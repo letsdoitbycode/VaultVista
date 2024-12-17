@@ -1,0 +1,80 @@
+
+  /* Container to hold the charts */
+  .graph-section {
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  /* Title of the graph section */
+  .graph-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4e73df;
+    font-weight: bold;
+  }
+
+  /* Flexbox container for responsive chart layout */
+  .chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+
+  /* Card styling for individual charts */
+  .chart-card {
+    flex: 1 1 calc(33.333% - 20px); /* Three charts in a row, but responsive */
+    min-width: 280px;
+    max-width: 380px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+  }
+
+  /* Card title */
+  .chart-card .card-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 992px) {
+    .chart-card {
+      flex: 1 1 calc(50% - 20px); /* Two charts in a row on medium screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .chart-card {
+      flex: 1 1 100%; /* One chart per row on smaller screens */
+    }
+  }
+
+ /* CSS for container and bar chart */
+ .chart-card {
+  max-width: 1000px; 
+  margin: auto; 
+}
+
+#barChart {
+  width: 100%; 
+  height: auto; 
+  max-width: 1000px; 
+}
+
+#lineChart{
+  width: 100%; 
+  max-height:500px ; 
+  max-width: 1000px; 
+
+}
+
+.first-chart {
+  margin-top: 50px; 
+}

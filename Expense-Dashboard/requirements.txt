@@ -1,0 +1,6 @@
+django 
+wheel 
+setuptools
+cmake
+validate-email
+six
